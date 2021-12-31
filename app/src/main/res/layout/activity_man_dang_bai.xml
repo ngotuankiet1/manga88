@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/icon2"
     tools:context=".ManDangBai">
 
     <LinearLayout
@@ -27,20 +26,21 @@
             android:inputType="text"
             android:id="@+id/dbTenTruyen"
             android:hint="Tên Truyện"
-            android:textColorHint="@color/white"
             android:layout_gravity="center"
+            android:background="@drawable/bg_solid"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/black"
             android:layout_marginTop="30dp"
             android:layout_width="300dp"
             android:layout_height="50dp"></EditText>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/menu_theloai"
+            android:id="@+id/menutheloai"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColorHint="@color/black"
             android:layout_marginTop="30dp"
-            app:boxBackgroundMode="outline"
-            android:textColorHint="@color/white"
             android:hint="Thể Loại"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
 
@@ -54,13 +54,12 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/menu_trangthai"
+            android:id="@+id/menutrangthai"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:textColorHint="@color/white"
-            app:boxBackgroundMode="outline"
+            android:textColorHint="@color/black"
             android:hint="Trạng Thái"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
 
@@ -79,7 +78,9 @@
             android:hint="Tác Giả"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:textColorHint="@color/white"
+            android:background="@drawable/bg_solid"
+            android:textColorHint="@color/black"
+            android:paddingLeft="10dp"
             android:layout_width="300dp"
             android:layout_height="50dp"></EditText>
 
@@ -89,7 +90,9 @@
             android:hint="Tóm Tắt Truyện"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:textColorHint="@color/white"
+            android:background="@drawable/bg_solid"
+            android:textColorHint="@color/black"
+            android:paddingLeft="10dp"
             android:layout_width="300dp"
             android:layout_height="50dp"></EditText>
 
@@ -99,7 +102,9 @@
             android:hint="Ảnh"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:textColorHint="@color/white"
+            android:background="@drawable/bg_solid"
+            android:textColorHint="@color/black"
+            android:paddingLeft="10dp"
             android:layout_width="300dp"
             android:layout_height="50dp"></EditText>
 

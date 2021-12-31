@@ -24,11 +24,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
 
-            <ViewFlipper
-                android:background="#FFFFFF"
-                android:id="@+id/viewflipper"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"></ViewFlipper>
+<!--            <ViewFlipper-->
+<!--                android:background="#FFFFFF"-->
+<!--                android:id="@+id/viewflipper"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"></ViewFlipper>-->
 
 
             <LinearLayout
@@ -49,7 +49,8 @@
                 <ListView
                     android:id="@+id/listviewNew"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></ListView>
+                    android:layout_height="wrap_content"
+                    android:background="#75b3ef"></ListView>
             </LinearLayout>
 
         </LinearLayout>
@@ -58,11 +59,9 @@
             android:layout_gravity = "start"
             android:id="@+id/navigationview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ListView
-                android:id="@+id/listviewthongtin"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"></ListView>
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:headerLayout="@layout/navigation_thongtin">
             <ListView
                 android:id="@+id/listviewmanhinhchinh"
                 android:layout_marginTop="150dp"

@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/ComicApp88/app/src/main/res/drawable/bg.xml" value="0.2203125" />
         <entry key="..\:/ComicApp88/app/src/main/res/drawable/bg_solid.xml" value="0.2169230769230769" />
+        <entry key="..\:/ComicApp88/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.2203125" />
         <entry key="..\:/ComicApp88/app/src/main/res/drawable/ic_baseline_cloud_download_24.xml" value="0.2203125" />
         <entry key="..\:/ComicApp88/app/src/main/res/drawable/ic_baseline_compass_calibration_24.xml" value="0.2169230769230769" />
         <entry key="..\:/ComicApp88/app/src/main/res/drawable/ic_baseline_emoji_emotions_24.xml" value="0.2169230769230769" />
@@ -25,6 +26,7 @@
         <entry key="..\:/ComicApp88/app/src/main/res/layout/activity_splash_creen.xml" value="0.19010416666666666" />
         <entry key="..\:/ComicApp88/app/src/main/res/layout/chuyenmuc.xml" value="0.20416666666666666" />
         <entry key="..\:/ComicApp88/app/src/main/res/layout/list_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/ComicApp88/app/src/main/res/layout/nav_header.xml" value="0.20416666666666666" />
         <entry key="..\:/ComicApp88/app/src/main/res/layout/navigation_thongtin.xml" value="0.20416666666666666" />
         <entry key="..\:/ComicApp88/app/src/main/res/layout/sadsad.xml" value="0.20416666666666666" />
         <entry key="..\:/ComicApp88/app/src/main/res/layout/search.xml" value="0.20416666666666666" />

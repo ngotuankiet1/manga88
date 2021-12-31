@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".ManTheLoai">
 
     <RelativeLayout
@@ -12,6 +11,7 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/txttheloai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Thể loại"
@@ -23,6 +23,7 @@
         <ListView
             android:id="@+id/lvTheLoai"
             android:layout_width="match_parent"
+            android:layout_below="@+id/txttheloai"
             android:layout_height="wrap_content"></ListView>
 
     </RelativeLayout>

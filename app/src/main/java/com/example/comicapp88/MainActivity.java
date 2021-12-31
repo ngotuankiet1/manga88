@@ -19,7 +19,6 @@ import android.widget.ViewFlipper;
 
 import com.example.comicapp88.Model.chuyenmuc;
 import com.example.comicapp88.adapter.adapterchuyenmuc;
-import com.example.comicapp88.adapter.adapterthongtin;
 import com.google.android.material.navigation.NavigationView;
 import com.squareup.picasso.Picasso;
 
@@ -30,11 +29,10 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     ViewFlipper viewFlipper;
     NavigationView navigationView;
-    ListView listView,listViewNew,listViewThongTin;
+    ListView listView;
     DrawerLayout drawerLayout;
 
     adapterchuyenmuc adapterchuyenmuc;
-    adapterthongtin adapterthongtin;
     ArrayList<chuyenmuc> chuyenmucArrayList;
 
     @Override
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         AnhXa();
         ActionBar();
-        ActionViewFlipper();
+//        ActionViewFlipper();
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -53,9 +51,11 @@ public class MainActivity extends AppCompatActivity {
                 if(position == 0){
                         Intent intent = new Intent(MainActivity.this,ManAdmin.class);
                         startActivity(intent);
-                }if(position == 1){
+                }else if(position == 1){
                     Intent intent = new Intent(MainActivity.this,ManTheLoai.class);
                     startActivity(intent);
+                }else if(position == 2){
+                    finish();
                 }
             }
         });
@@ -82,21 +82,21 @@ public class MainActivity extends AppCompatActivity {
 
     private void AnhXa(){
         toolbar = findViewById(R.id.toolbarmanhinhchinh);
-        viewFlipper = findViewById(R.id.viewflipper);
+//        viewFlipper = findViewById(R.id.viewflipper);
         listView = findViewById(R.id.listviewmanhinhchinh);
-        listViewThongTin = findViewById(R.id.listviewthongtin);
         navigationView = findViewById(R.id.navigationview);
         drawerLayout = findViewById(R.id.drawerlayout);
 
 
         //thông tin
-        adapterthongtin = new adapterthongtin(this,R.layout.navigation_thongtin);
-        listViewThongTin.setAdapter(adapterthongtin);
+//        adapterthongtin = new adapterthongtin(this,R.layout.navigation_thongtin);
+//        listViewThongTin.setAdapter(adapterthongtin);
 
         //chuyên mục
         chuyenmucArrayList = new ArrayList<>();
-        chuyenmucArrayList.add(new chuyenmuc("Đăng bài",R.drawable.ic_baseline_arrow_back_ios_24));
-        chuyenmucArrayList.add(new chuyenmuc("Thể Loại",R.drawable.ic_baseline_arrow_back_ios_24));
+        chuyenmucArrayList.add(new chuyenmuc("Đăng bài",R.drawable.post));
+        chuyenmucArrayList.add(new chuyenmuc("Thể loại",R.drawable.category));
+        chuyenmucArrayList.add(new chuyenmuc("Đăng xuất",R.drawable.logout));
 
         adapterchuyenmuc = new adapterchuyenmuc(this,R.layout.chuyenmuc,chuyenmucArrayList);
         listView.setAdapter(adapterchuyenmuc);

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center">
     <RelativeLayout
-        android:background="#f9e711e0"
+        android:background="#aac9ff"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="150dp">
@@ -14,19 +14,22 @@
             android:id="@+id/imagevew"
             android:layout_width="90dp"
             android:layout_height="80dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/bg"
             android:src="@drawable/ic_baseline_menu_book_24"></ImageView>
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="250dp"
-            android:layout_height="300dp"
-            android:layout_margin="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
             android:layout_toEndOf="@+id/imagevew"
-            android:text="Ứng dụng đọc sách tốt nhất!"
+            android:text="Ứng dụng đọc sách tốt nhất !"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="23dp"
             android:textStyle="bold"></TextView>
 
     </RelativeLayout>

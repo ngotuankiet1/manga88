@@ -28,9 +28,9 @@ public class ManDangBai extends AppCompatActivity {
         String[] item1 = {"Hoàn thiện","Chưa Hoàn Thiện"};
         String[] item2 = {"Tình Cảm","Kinh Dị","Hành Động","Ngôn Tình"};
 
-        mntheloai = findViewById(R.id.menu_theloai);
+        mntheloai = findViewById(R.id.menutheloai);
         theloai = findViewById(R.id.theloai);
-        mntrangthai = findViewById(R.id.menu_trangthai);
+        mntrangthai = findViewById(R.id.menutrangthai);
         trangthai = findViewById(R.id.trangthai);
 
         ArrayAdapter<String> tl = new ArrayAdapter<>(ManDangBai.this,R.layout.text_color_layout,item1);

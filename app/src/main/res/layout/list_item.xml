@@ -19,10 +19,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/images_item"
-        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:singleLine="true"
         android:text="Tên truyện"
-        android:textSize="25dp"
-        android:layout_marginTop="20dp"></TextView>
+        android:textColor="@color/black"
+        android:textSize="25dp"></TextView>
 
     <TextView
         android:id="@+id/category_item"
